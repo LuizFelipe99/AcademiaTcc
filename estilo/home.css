@@ -1,0 +1,15 @@
+.verde{
+  background: linear-gradient(45deg,#00ac1d,#86e696);
+}
+
+.laranja{
+  background: linear-gradient(45deg,#ff9900,#fcce8a);
+}
+
+.vermelho{
+  background: linear-gradient(45deg,#ff0000,#fc8a8a);
+}
+
+.link{
+  color:black;
+}

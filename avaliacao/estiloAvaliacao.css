@@ -1,0 +1,28 @@
+.imageBody{
+	position: absolute;
+	left: 10%;
+	height: 60%;
+}
+
+
+.ladoEsquerdo{
+	position: relative;
+	left: 45%;	
+}
+
+.meio{
+	position: relative;
+	left: 20%;	
+}
+
+.cardEstilo{
+	border-radius: 20px;
+	color: black;
+	font-weight: bold;
+
+}
+#calendar{
+    max-width: 900px;
+     margin: 0 auto;
+}
+
