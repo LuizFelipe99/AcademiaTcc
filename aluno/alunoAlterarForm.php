@@ -23,30 +23,24 @@ $dataCad = $_POST['dataCad'];
 
 // incluindo conexao
 include "controle/classes/conexao_class.php";
-//incluindo personal
-include "controle/classes/personal_class.php";
 
-$personalClass = new Personal();
+//incluindo alunos
+include "controle/classes/usuario_class.php";
+
+$userClass = new Usuario();
 //Recupera os valores da classe 
-$nomePersonal = $personalClass->__get('nomePersonal');
-$idadePersonal = $personalClass->__get('idadePersonal');
-$tel1Personal = $personalClass->__get('tel1Personal');
-$tel2Personal = $personalClass->__get('tel2Personal');
-$ruaPersonal = $personalClass->__get('ruaPersonal');
-$bairroPersonal = $personalClass->__get('bairroPersonal');
-$cidadePersonal = $personalClass->__get('cidadePersonal');
-$sexoPersonal = $personalClass->__get('sexoPersonal');
-$formacaoPersonal = $personalClass->__get('formacaoPersonal');
-
-
-
+$loginUsuario = $userClass->__get('loginUsuario');
+$senhaUsuario = $userClass->__get('senhaUsuario');
+$emailUsuario = $userClass->__get('emailUsuario');
+$nivelUsuario = $userClass->__get('nivelUsuario');
+$nomeUsuario = $userClass->__get('nomeUsuario');
 
 
 $conexao = new Conexao();
 
-$listaPersonal = new ControlaPersonal($conexao, $nomePersonal, $idadePersonal, $tel1Personal, $tel2Personal, $ruaPersonal,$bairroPersonal,$cidadePersonal,$sexoPersonal, $formacaoPersonal);
+$listaUser = new ControlaUsuario($conexao, $loginUsuario, $senhaUsuario, $emailUsuario, $nivelUsuario, $nomeUsuario);
 
-$listaPersonal->readPersonal();
+$listaUser->readUser();
 
 
 ?>
@@ -115,7 +109,7 @@ $listaPersonal->readPersonal();
 				foreach ($_SESSION['dados'] as $key => $value) {
 
 				?>
-				<option><?php echo $value->nomePersonal; ?></option>
+				<option><?php echo $value->loginUsuario; ?></option>
 
 				<?php
 				#fechando foreach
