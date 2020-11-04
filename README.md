@@ -4,3 +4,8 @@ A ideia do sistema em questão é ajudar naorganização e no fluxo de academia.
 O Sistema é todo feito em PHP,HTML,CSS,JS.
 
 A parte WEB do sistema contará com controle de alunos, personal, fichas, avaliações e mensalidades.
+
+
+Basta apenas importar o banco de dados no phpmyadmin e executar projeto.
+
+ # # # PROJETO EM DESENVOLVIMENTO # # #
